@@ -16,9 +16,9 @@ export const btnSecondary =
   "inline-block border border-[#F8FAFC]/30 px-7 py-4 text-[#F8FAFC] hover:border-[#F8FAFC]";
 
 // 3×3 grid minus the center = 8 bits = 1 byte. Index 2 is top-right.
-function LogoMark() {
+export function LogoMark({ size = 40 }: { size?: number }) {
   return (
-    <svg width="40" height="40" viewBox="0 0 256 256" aria-hidden="true">
+    <svg width={size} height={size} viewBox="0 0 256 256" aria-hidden="true" className="max-w-full h-auto">
       {[0, 1, 2, 3, 5, 6, 7, 8].map((i) => (
         <rect
           key={i}
