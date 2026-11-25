@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ContactForm } from "./contact/contact-form";
 import { BOOKING_URL, LogoMark, MESSENGER_URL, TULAY_URL, btnPrimary, btnSecondary, display, mono, rule, wrap } from "./site";
@@ -151,6 +152,7 @@ export default function Home() {
       <section className={band}>
         <div className={`${wrap} flex flex-wrap items-end justify-between gap-8`}>
           <div>
+            <Image src="/tulay-logo.png" alt="Tulay" width={134} height={32} className="mb-8" />
             <h2 className={h2}>Founding client: Tulay</h2>
             <p className="mt-6 max-w-2xl text-lg text-[#94A3B8]">
               A B2B marketplace connecting Philippine business buyers with verified suppliers. We’re running a
