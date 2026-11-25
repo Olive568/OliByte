@@ -148,12 +148,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Founding client */}
+      {/* Clients */}
       <section className={band}>
         <div className={`${wrap} flex flex-wrap items-end justify-between gap-8`}>
           <div>
-            <Image src="/tulay-logo.png" alt="Tulay" width={134} height={32} className="mb-8" />
-            <h2 className={h2}>Founding client: Tulay</h2>
+            <h2 className={h2}>Clients</h2>
+            <Image src="/tulay-logo.png" alt="Tulay" width={202} height={48} className="mt-10" />
             <p className="mt-6 max-w-2xl text-lg text-[#94A3B8]">
               A B2B marketplace connecting Philippine business buyers with verified suppliers. We build and run
               the whole platform: frontend, backend, and deployment.

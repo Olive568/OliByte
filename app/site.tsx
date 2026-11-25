@@ -39,10 +39,6 @@ export function Label({ children, className = "" }: { children: React.ReactNode;
   return <p className={`${mono} text-xs text-[#94A3B8] ${className}`}>{children}</p>;
 }
 
-// Page title block shared by the inner pages.
-export function PageHead({ title }: { title: string }) {
-  return <h1 className={`${display} max-w-5xl text-5xl sm:text-7xl`}>{title}</h1>;
-}
 
 const navLinks = [
   ["/what-we-do", "What We Do"],
