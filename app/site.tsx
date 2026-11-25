@@ -44,9 +44,9 @@ export function PageHead({ title }: { title: string }) {
 }
 
 const navLinks = [
-  ["/about", "About"],
-  ["/projects", "Projects"],
   ["/what-we-do", "What We Do"],
+  ["/projects", "Projects & Clients"],
+  ["/about", "About"],
   ["/contact", "Contact"],
 ];
 
