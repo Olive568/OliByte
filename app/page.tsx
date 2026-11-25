@@ -155,8 +155,8 @@ export default function Home() {
             <Image src="/tulay-logo.png" alt="Tulay" width={134} height={32} className="mb-8" />
             <h2 className={h2}>Founding client: Tulay</h2>
             <p className="mt-6 max-w-2xl text-lg text-[#94A3B8]">
-              A B2B marketplace connecting Philippine business buyers with verified suppliers. We’re running a
-              backend and deployment audit, currently active.
+              A B2B marketplace connecting Philippine business buyers with verified suppliers. We build and run
+              the whole platform: frontend, backend, and deployment.
             </p>
           </div>
           <div className="flex flex-wrap gap-4">

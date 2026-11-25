@@ -11,7 +11,8 @@ export default function Projects() {
       <PageHead title="Founding Client Spotlight: Tulay" />
       <p className="mt-8 max-w-2xl text-xl text-[#94A3B8]">
         Tulay is a B2B marketplace for the Philippines that connects business buyers with verified suppliers.
-        Buyers browse products, post requests for quotes, and compare offers in one place.
+        Buyers browse products, post requests for quotes, and compare offers in one place. OliByte builds and runs
+        the whole platform: frontend, backend, and deployment.
       </p>
       <a href={TULAY_URL} target="_blank" rel="noopener noreferrer" className={`${btnSecondary} mt-10`}>
         Visit Tulay ↗
@@ -19,7 +20,7 @@ export default function Projects() {
       <dl className={`mt-16 grid border-y ${rule} sm:grid-cols-3`}>
         {[
           ["Client", "Tulay"],
-          ["Engagement", "Backend & Deployment Audit"],
+          ["Engagement", "Full build: frontend, backend & deployment"],
           ["Status", "Active"],
         ].map(([k, v], i) => (
           <div key={k} className={`py-6 sm:px-6 ${i > 0 ? `border-t sm:border-t-0 sm:border-l ${rule}` : "sm:pl-0"}`}>
@@ -31,7 +32,7 @@ export default function Projects() {
           </div>
         ))}
       </dl>
-      {/* TODO: add the founder's 2-sentence quote and audit outcome once the engagement closes. */}
+      {/* TODO: add the founder's 2-sentence quote and key results. */}
     </section>
   );
 }
