@@ -55,15 +55,15 @@ const stack = [
 // 3×3 grid minus the center = 8 bits = 1 byte. Index 2 is top-right.
 function LogoMark() {
   return (
-    <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
+    <svg width="40" height="40" viewBox="0 0 256 256" aria-hidden="true">
       {[0, 1, 2, 3, 5, 6, 7, 8].map((i) => (
         <rect
           key={i}
-          x={(i % 3) * 10}
-          y={Math.floor(i / 3) * 10}
-          width="8"
-          height="8"
-          rx="1.5"
+          x={(i % 3) * 92}
+          y={Math.floor(i / 3) * 92}
+          width="72"
+          height="72"
+          rx="12"
           fill={i === 2 ? "#10B981" : "#F8FAFC"}
         />
       ))}
@@ -86,11 +86,13 @@ export default function Home() {
     <>
       <header className={`border-b ${rule} py-6`}>
         <div className={`${wrap} flex items-center justify-between gap-6`}>
-          <a href="#" className="flex items-center gap-3">
+          <a href="#" className="flex items-center gap-4">
             <LogoMark />
-            <span className="text-xl font-bold tracking-[-0.02em]">OliByte</span>
-            <span className={`${mono} hidden text-[0.65rem] text-[#94A3B8] sm:inline`}>
-              Software &amp; AI Services
+            <span className="flex flex-col">
+              <span className="text-2xl font-bold leading-none tracking-[-0.03em]">OliByte</span>
+              <span className={`${mono} mt-1.5 text-[0.6rem] font-bold tracking-[0.18em] text-[#10B981]`}>
+                Software &amp; AI Services
+              </span>
             </span>
           </a>
           <nav className={`${mono} flex gap-6 text-xs`}>
