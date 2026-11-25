@@ -4,16 +4,16 @@ import { BOOKING_URL, Label, MAILTO, MESSENGER_URL, btnPrimary, btnSecondary, di
 const sections = [
   ["/about", "About", "Who we are and how we work."],
   ["/projects", "Projects", "Client work, starting with our founding client."],
-  ["/stack", "Stack", "The tools and platforms we build on."],
+  ["/what-we-do", "What We Do", "AI software, the tools we build with, and how we work."],
   ["/contact", "Contact", "Book a meeting, message us, or send an email."],
 ];
 
 export default function Home() {
   return (
     <>
-      <section className={`${wrap} py-28 sm:py-36`}>
+      <section className={`${wrap} py-16 sm:py-36`}>
         <Label>Las Piñas, Metro Manila // Remote Worldwide</Label>
-        <h1 className={`${display} mt-10 text-5xl sm:text-7xl lg:text-[6.5rem]`}>An AI-native software and IT agency.</h1>
+        <h1 className={`${display} mt-10 text-5xl sm:text-7xl lg:text-[6.5rem]`}>AI-native software and IT services.</h1>
         <p className="mt-10 max-w-2xl text-xl text-[#94A3B8] sm:text-2xl">
           We design, build, and run web apps, backends, and AI automations for SMEs and startups,
           with AI built into how we engineer, test, and deploy.

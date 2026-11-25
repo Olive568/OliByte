@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://olibyte.vercel.app"),
   title: { default: "OliByte — Software & AI Services", template: "%s | OliByte" },
   description:
-    "AI-native software and IT agency. Web apps, backends, and AI automations for SMEs and startups. Las Piñas, Metro Manila // Remote worldwide.",
+    "AI-native software and IT services. Web apps, backends, and AI automations for SMEs and startups. Las Piñas, Metro Manila // Remote worldwide.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

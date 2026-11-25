@@ -51,7 +51,7 @@ export function PageHead({ label, title }: { label: string; title: string }) {
 const navLinks = [
   ["/about", "About"],
   ["/projects", "Projects"],
-  ["/stack", "Stack"],
+  ["/what-we-do", "What We Do"],
   ["/contact", "Contact"],
 ];
 
@@ -68,13 +68,13 @@ export function SiteHeader() {
             </span>
           </span>
         </Link>
-        <nav className={`${mono} flex flex-wrap items-center gap-x-6 gap-y-3 text-xs`}>
+        <nav className={`${mono} -my-2.5 flex flex-wrap items-center gap-x-6 text-xs`}>
           {navLinks.map(([href, text]) => (
-            <Link key={href} href={href} className="hover:text-[#10B981]">
+            <Link key={href} href={href} className="py-2.5 hover:text-[#10B981]">
               {text}
             </Link>
           ))}
-          <a href={BOOKING_URL} className="text-[#10B981] hover:text-[#F8FAFC]">Book a Meeting →</a>
+          <a href={BOOKING_URL} className="py-2.5 text-[#10B981] hover:text-[#F8FAFC]">Book a Meeting →</a>
         </nav>
       </div>
     </header>
@@ -84,11 +84,11 @@ export function SiteHeader() {
 export function SiteFooter() {
   return (
     <footer className={`border-t ${rule} py-6`}>
-      <div className={`${wrap} ${mono} flex flex-wrap justify-between gap-4 text-[0.65rem] text-[#94A3B8]`}>
+      <div className={`${wrap} ${mono} flex flex-wrap justify-between gap-4 text-xs text-[#94A3B8]`}>
         <p>© 2026 OliByte Software &amp; AI Services • Las Piñas, Metro Manila, Philippines</p>
-        <nav className="flex gap-6">
-          <Link href="/privacy" className="hover:text-[#F8FAFC]">Privacy Policy</Link>
-          <Link href="/terms" className="hover:text-[#F8FAFC]">Terms &amp; Conditions</Link>
+        <nav className="-my-2.5 flex gap-6">
+          <Link href="/privacy" className="py-2.5 hover:text-[#F8FAFC]">Privacy Policy</Link>
+          <Link href="/terms" className="py-2.5 hover:text-[#F8FAFC]">Terms &amp; Conditions</Link>
         </nav>
       </div>
     </footer>

@@ -6,7 +6,7 @@ export const metadata: Metadata = { title: "About" };
 
 const explore = [
   ["/projects", "Projects"],
-  ["/stack", "Stack"],
+  ["/what-we-do", "What We Do"],
   ["/contact", "Contact"],
   ["/privacy", "Privacy Policy"],
 ];
@@ -34,21 +34,21 @@ const principles = [
   ["Plain updates", "Progress reports in plain language over Messenger or email."],
 ];
 
-const band = `border-t ${rule} py-24 sm:py-32`;
+const band = `border-t ${rule} py-16 sm:py-32`;
 const h2 = `${display} mt-6 text-4xl sm:text-5xl`;
 
 export default function About() {
   return (
     <>
       {/* Hero: intro on the left, quick links on the right. */}
-      <section className={`${wrap} grid gap-16 py-28 sm:py-36 lg:grid-cols-[3fr_1fr]`}>
+      <section className={`${wrap} grid gap-16 py-16 sm:py-36 lg:grid-cols-[3fr_1fr]`}>
         <div>
           <Label>About // OliByte</Label>
           <h1 className={`${display} mt-8 max-w-4xl text-5xl sm:text-7xl`}>
             Software and IT, built with AI from the start.
           </h1>
           <p className="mt-10 max-w-2xl text-xl text-[#94A3B8]">
-            OliByte Software &amp; AI Services is a software and IT agency based in Las Piñas, Metro Manila,
+            OliByte Software &amp; AI Services is a software and IT company based in Las Piñas, Metro Manila,
             working with SMEs and startups in the Philippines and remotely worldwide.
           </p>
           <div className="mt-12 flex flex-wrap gap-4">
@@ -157,7 +157,7 @@ export default function About() {
       </section>
 
       {/* CTA */}
-      <section className={`border-t ${rule} bg-[#10B981] py-24 text-[#111827] sm:py-32`}>
+      <section className={`border-t ${rule} bg-[#10B981] py-16 text-[#111827] sm:py-32`}>
         <div className={`${wrap} text-center`}>
           <h2 className={`${display} mx-auto max-w-3xl text-4xl sm:text-5xl`}>Let’s talk about your project.</h2>
           <p className="mt-6 text-lg">A first meeting is free, with no commitment.</p>

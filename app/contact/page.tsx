@@ -8,7 +8,7 @@ const link = "text-[#F8FAFC] underline hover:text-[#10B981]";
 
 export default function Contact() {
   return (
-    <section className={`${wrap} grid gap-16 py-28 sm:py-36 lg:grid-cols-[2fr_3fr] lg:gap-20`}>
+    <section className={`${wrap} grid gap-16 py-16 sm:py-36 lg:grid-cols-[2fr_3fr] lg:gap-20`}>
       <div>
         <Label>Contact // Las Piñas, Metro Manila</Label>
         <h1 className={`${display} mt-8 text-4xl sm:text-5xl`}>
@@ -18,7 +18,7 @@ export default function Contact() {
           Tell us what you need and we’ll get back to you by email. We work with SMEs and startups in
           the Philippines and remotely worldwide.
         </p>
-        <ul className={`${mono} mt-12 space-y-4 text-xs text-[#94A3B8]`}>
+        <ul className={`${mono} mt-12 space-y-6 text-xs text-[#94A3B8]`}>
           <li>Prefer to talk? <a href={BOOKING_URL} className={link}>Book a meeting</a></li>
           <li>Message us on <a href={MESSENGER_URL} className={link}>Facebook Messenger</a></li>
           <li>Email <a href={MAILTO} className={`${link} normal-case`}>{EMAIL}</a></li>

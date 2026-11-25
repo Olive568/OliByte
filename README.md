@@ -1,6 +1,6 @@
 # OliByte
 
-Single-page site for OliByte Software & AI Services, an AI-native software and IT agency.
+Single-page site for OliByte Software & AI Services: AI-native software and IT services.
 
 Built with Next.js (App Router), TypeScript, and Tailwind CSS. The page lives in `app/page.tsx`.
 
