@@ -84,15 +84,14 @@ const faqs = [
 ];
 
 const band = `border-t ${rule} py-16 sm:py-32`;
-const h2 = `${display} mt-6 text-4xl sm:text-5xl`;
+const h2 = `${display} text-4xl sm:text-5xl`;
 
 export default function WhatWeDo() {
   return (
     <>
       {/* Hero */}
       <section className={`${wrap} py-16 sm:py-36`}>
-        <Label>What we do // AI software</Label>
-        <h1 className={`${display} mt-8 max-w-5xl text-5xl sm:text-7xl`}>
+        <h1 className={`${display} max-w-5xl text-5xl sm:text-7xl`}>
           The software you’ve been putting off is now within reach.
         </h1>
         <p className="mt-10 max-w-2xl text-xl text-[#94A3B8]">
@@ -108,7 +107,6 @@ export default function WhatWeDo() {
       {/* Starting points */}
       <section className={band}>
         <div className={wrap}>
-          <Label>01 // Starting points</Label>
           <h2 className={h2}>Start where you are. Move fast from there.</h2>
           <ol className="mt-14 grid gap-6 lg:grid-cols-3">
             {paths.map(([title, text], i) => (
@@ -125,7 +123,6 @@ export default function WhatWeDo() {
       {/* Systems */}
       <section className={band}>
         <div className={wrap}>
-          <Label>02 // Systems</Label>
           <h2 className={h2}>Systems we build</h2>
           <p className="mt-6 max-w-2xl text-lg text-[#94A3B8]">
             Everyday software that runs a business, built around how your team already works.
@@ -144,7 +141,6 @@ export default function WhatWeDo() {
       {/* Technologies */}
       <section className={band}>
         <div className={wrap}>
-          <Label>03 // Technologies</Label>
           <h2 className={h2}>What we build with</h2>
           <p className="mt-6 max-w-2xl text-lg text-[#94A3B8]">
             Every solution is reviewed and tested by an engineer, whatever model or tool is behind it.
@@ -176,7 +172,6 @@ export default function WhatWeDo() {
       <section className={band}>
         <div className={`${wrap} grid gap-12 lg:grid-cols-2`}>
           <div>
-            <Label>04 // Results</Label>
             <h2 className={h2}>What AI software delivers for your business</h2>
           </div>
           <ul className="space-y-6 text-lg text-[#94A3B8]">
@@ -190,7 +185,6 @@ export default function WhatWeDo() {
       {/* Approach */}
       <section className={band}>
         <div className={wrap}>
-          <Label>05 // Approach</Label>
           <h2 className={h2}>How we build it</h2>
           <ol className={`mt-14 grid border-t ${rule} sm:grid-cols-2 lg:grid-cols-4`}>
             {steps.map(([title, text], i) => (
@@ -207,7 +201,6 @@ export default function WhatWeDo() {
       {/* FAQ */}
       <section className={band}>
         <div className={wrap}>
-          <Label>06 // FAQ</Label>
           <h2 className={h2}>Commonly asked questions</h2>
           <div className={`mt-14 border-t ${rule}`}>
             {faqs.map(([q, a]) => (

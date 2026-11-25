@@ -35,7 +35,7 @@ const principles = [
 ];
 
 const band = `border-t ${rule} py-16 sm:py-32`;
-const h2 = `${display} mt-6 text-4xl sm:text-5xl`;
+const h2 = `${display} text-4xl sm:text-5xl`;
 
 export default function About() {
   return (
@@ -43,8 +43,7 @@ export default function About() {
       {/* Hero: intro on the left, quick links on the right. */}
       <section className={`${wrap} grid gap-16 py-16 sm:py-36 lg:grid-cols-[3fr_1fr]`}>
         <div>
-          <Label>About // OliByte</Label>
-          <h1 className={`${display} mt-8 max-w-4xl text-5xl sm:text-7xl`}>
+          <h1 className={`${display} max-w-4xl text-5xl sm:text-7xl`}>
             Software and IT, built with AI from the start.
           </h1>
           <p className="mt-10 max-w-2xl text-xl text-[#94A3B8]">
@@ -74,7 +73,6 @@ export default function About() {
       <section className={band}>
         <div className={`${wrap} grid gap-12 lg:grid-cols-2`}>
           <div>
-            <Label>01 // Our story</Label>
             <h2 className={h2}>Why we started OliByte</h2>
           </div>
           <div className="space-y-6 text-lg text-[#94A3B8]">
@@ -91,7 +89,6 @@ export default function About() {
       {/* What we do */}
       <section className={band}>
         <div className={wrap}>
-          <Label>02 // What we do</Label>
           <h2 className={h2}>Services</h2>
           <dl className={`mt-14 grid border-t ${rule} sm:grid-cols-2 lg:grid-cols-3`}>
             {services.map(([title, text]) => (
@@ -107,7 +104,6 @@ export default function About() {
       {/* Engagement models */}
       <section className={band}>
         <div className={wrap}>
-          <Label>03 // Working together</Label>
           <h2 className={h2}>Three ways to work with us</h2>
           <ol className="mt-14 grid gap-6 lg:grid-cols-3">
             {engagements.map(([title, text], i) => (
@@ -125,7 +121,6 @@ export default function About() {
       <section className={band}>
         <div className={`${wrap} grid gap-12 lg:grid-cols-2`}>
           <div>
-            <Label>04 // AI-native</Label>
             <h2 className={h2}>How we use AI</h2>
           </div>
           <div className="space-y-6 text-lg text-[#94A3B8]">
@@ -143,7 +138,6 @@ export default function About() {
       {/* Principles */}
       <section className={band}>
         <div className={wrap}>
-          <Label>05 // Principles</Label>
           <h2 className={h2}>How we work</h2>
           <dl className="mt-14 grid gap-x-10 gap-y-12 sm:grid-cols-2">
             {principles.map(([title, text]) => (

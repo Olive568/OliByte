@@ -6,7 +6,7 @@ export const metadata: Metadata = { title: "Projects" };
 export default function Projects() {
   return (
     <section className={`${wrap} py-16 sm:py-36`}>
-      <PageHead label="Projects // 001" title="Founding Client Spotlight: Tulay" />
+      <PageHead title="Founding Client Spotlight: Tulay" />
       <dl className={`mt-16 grid border-y ${rule} sm:grid-cols-3`}>
         {[
           ["Client", "Tulay"],

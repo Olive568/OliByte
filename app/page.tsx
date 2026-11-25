@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ContactForm } from "./contact/contact-form";
-import { BOOKING_URL, Label, LogoMark, MESSENGER_URL, btnPrimary, btnSecondary, display, mono, rule, wrap } from "./site";
+import { BOOKING_URL, LogoMark, MESSENGER_URL, btnPrimary, btnSecondary, display, mono, rule, wrap } from "./site";
 
 // TODO: confirm these engagement types and promises match how OliByte actually sells work.
 const offers = [
@@ -51,7 +51,7 @@ const journey = [
 ];
 
 const band = `border-t ${rule} py-16 sm:py-32`;
-const h2 = `${display} mt-6 text-4xl sm:text-5xl`;
+const h2 = `${display} text-4xl sm:text-5xl`;
 
 export default function Home() {
   return (
@@ -59,8 +59,7 @@ export default function Home() {
       {/* Hero: copy left, brand mark right. */}
       <section className={`${wrap} grid items-center gap-16 py-16 sm:py-36 lg:grid-cols-[3fr_2fr]`}>
         <div>
-          <Label>Las Piñas, Metro Manila // Remote Worldwide</Label>
-          <h1 className={`${display} mt-8 text-5xl sm:text-7xl`}>Software and AI your business can rely on.</h1>
+          <h1 className={`${display} text-5xl sm:text-7xl`}>Software and AI your business can rely on.</h1>
           <p className="mt-8 max-w-2xl text-xl text-[#94A3B8]">
             OliByte builds AI automations, business systems, and web apps for SMEs and startups, with AI built
             into how we engineer, test, and deploy.
@@ -80,7 +79,6 @@ export default function Home() {
         <div className={wrap}>
           <div className="flex flex-wrap items-end justify-between gap-6">
             <div>
-              <Label>01 // What we offer</Label>
               <h2 className={h2}>Ways to work with us</h2>
             </div>
             <Link href="/what-we-do" className={`${mono} py-2.5 text-xs text-[#10B981] hover:text-[#F8FAFC]`}>
@@ -118,7 +116,6 @@ export default function Home() {
       {/* Why */}
       <section className={band}>
         <div className={wrap}>
-          <Label>02 // Why OliByte</Label>
           <h2 className={h2}>Different in the ways that matter</h2>
           <dl className="mt-14 grid gap-x-10 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
             {reasons.map(([title, text]) => (
@@ -134,7 +131,6 @@ export default function Home() {
       {/* Journey */}
       <section className={band}>
         <div className={wrap}>
-          <Label>03 // The bigger picture</Label>
           <h2 className={h2}>From first idea to a system that keeps improving</h2>
           <ol className={`mt-14 grid border-t ${rule} sm:grid-cols-2 lg:grid-cols-5`}>
             {journey.map(([title, text], i) => (
@@ -155,7 +151,6 @@ export default function Home() {
       <section className={band}>
         <div className={`${wrap} flex flex-wrap items-end justify-between gap-8`}>
           <div>
-            <Label>04 // Our clients</Label>
             <h2 className={h2}>Founding client: Tulay</h2>
             <p className="mt-6 max-w-2xl text-lg text-[#94A3B8]">Backend and deployment audit, currently active.</p>
           </div>
@@ -167,7 +162,6 @@ export default function Home() {
       <section id="start" className={`${band} scroll-mt-8`}>
         <div className={`${wrap} grid gap-16 lg:grid-cols-[2fr_3fr] lg:gap-20`}>
           <div>
-            <Label>05 // Get started</Label>
             <h2 className={h2}>Tell us what you want to build.</h2>
             <p className="mt-6 text-lg text-[#94A3B8]">A quick question or a detailed brief, both are welcome.</p>
             <ul className="mt-10 space-y-4 text-lg">

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { BOOKING_URL, EMAIL, Label, MAILTO, MESSENGER_URL, display, mono, wrap } from "../site";
+import { BOOKING_URL, EMAIL, MAILTO, MESSENGER_URL, display, mono, wrap } from "../site";
 import { ContactForm } from "./contact-form";
 
 export const metadata: Metadata = { title: "Contact" };
@@ -10,8 +10,7 @@ export default function Contact() {
   return (
     <section className={`${wrap} grid gap-16 py-16 sm:py-36 lg:grid-cols-[2fr_3fr] lg:gap-20`}>
       <div>
-        <Label>Contact // Las Piñas, Metro Manila</Label>
-        <h1 className={`${display} mt-8 text-4xl sm:text-5xl`}>
+        <h1 className={`${display} text-4xl sm:text-5xl`}>
           Have a product to build or a process to automate? Let’s talk.
         </h1>
         <p className="mt-8 text-lg text-[#94A3B8]">

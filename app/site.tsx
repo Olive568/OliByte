@@ -39,13 +39,8 @@ export function Label({ children, className = "" }: { children: React.ReactNode;
 }
 
 // Page title block shared by the inner pages.
-export function PageHead({ label, title }: { label: string; title: string }) {
-  return (
-    <>
-      <Label>{label}</Label>
-      <h1 className={`${display} mt-8 max-w-5xl text-5xl sm:text-7xl`}>{title}</h1>
-    </>
-  );
+export function PageHead({ title }: { title: string }) {
+  return <h1 className={`${display} max-w-5xl text-5xl sm:text-7xl`}>{title}</h1>;
 }
 
 const navLinks = [
