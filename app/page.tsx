@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { ContactForm } from "./contact/contact-form";
-import { BOOKING_URL, LogoMark, MESSENGER_URL, btnPrimary, btnSecondary, display, mono, rule, wrap } from "./site";
+import { BOOKING_URL, LogoMark, MESSENGER_URL, TULAY_URL, btnPrimary, btnSecondary, display, mono, rule, wrap } from "./site";
 
 // TODO: confirm these engagement types and promises match how OliByte actually sells work.
 const offers = [
@@ -152,9 +152,15 @@ export default function Home() {
         <div className={`${wrap} flex flex-wrap items-end justify-between gap-8`}>
           <div>
             <h2 className={h2}>Founding client: Tulay</h2>
-            <p className="mt-6 max-w-2xl text-lg text-[#94A3B8]">Backend and deployment audit, currently active.</p>
+            <p className="mt-6 max-w-2xl text-lg text-[#94A3B8]">
+              A B2B marketplace connecting Philippine business buyers with verified suppliers. We’re running a
+              backend and deployment audit, currently active.
+            </p>
           </div>
-          <Link href="/projects" className={btnSecondary}>See our projects</Link>
+          <div className="flex flex-wrap gap-4">
+            <a href={TULAY_URL} target="_blank" rel="noopener noreferrer" className={btnSecondary}>Visit Tulay ↗</a>
+            <Link href="/projects" className={btnSecondary}>See our projects</Link>
+          </div>
         </div>
       </section>
 

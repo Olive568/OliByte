@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+export const TULAY_URL = "https://tulay-two.vercel.app/";
 // TODO: replace with the real Facebook Page handle and inbox before launch.
 export const MESSENGER_URL = "https://m.me/OliByteSoftwareAIServices";
 export const EMAIL = "olibyte.systems@gmail.com";
