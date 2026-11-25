@@ -11,6 +11,18 @@ const paths = [
   ["Take over", "A review of an existing or stalled project, then a plan to continue, improve, or rebuild it."],
 ];
 
+const systems = [
+  ["POS systems", "Point-of-sale for shops and restaurants: sales, receipts, discounts, and end-of-day reports."],
+  ["CRM systems", "One place for your customers, leads, deals, and follow-ups, instead of scattered chats and sheets."],
+  ["Inventory management", "Stock levels, suppliers, purchase orders, and low-stock alerts across one or more branches."],
+  ["CRUD apps & admin panels", "Internal tools to add, view, edit, and track any records your team works with."],
+  ["Booking & scheduling", "Online appointments and reservations with reminders, calendars, and staff schedules."],
+  ["Client portals", "A login area where customers see their orders, files, invoices, and project status."],
+  ["Dashboards & reports", "Live sales, operations, and finance numbers pulled from your systems into one screen."],
+  ["Workflow automations", "Connect your apps so orders, forms, invoices, and messages move without copy-pasting."],
+  ["AI chatbots & assistants", "Answer customer FAQs, take bookings, and qualify leads on your site or Messenger, any hour."],
+];
+
 const tech = [
   {
     title: "Large language models (LLMs)",
@@ -110,10 +122,29 @@ export default function WhatWeDo() {
         </div>
       </section>
 
+      {/* Systems */}
+      <section className={band}>
+        <div className={wrap}>
+          <Label>02 // Systems</Label>
+          <h2 className={h2}>Systems we build</h2>
+          <p className="mt-6 max-w-2xl text-lg text-[#94A3B8]">
+            Everyday software that runs a business, built around how your team already works.
+          </p>
+          <dl className={`mt-14 grid border-t ${rule} sm:grid-cols-2 lg:grid-cols-3`}>
+            {systems.map(([title, text]) => (
+              <div key={title} className={`border-b ${rule} py-8 sm:pr-10`}>
+                <dt className="text-xl font-semibold">{title}</dt>
+                <dd className="mt-3 text-[#94A3B8]">{text}</dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
+
       {/* Technologies */}
       <section className={band}>
         <div className={wrap}>
-          <Label>02 // Technologies</Label>
+          <Label>03 // Technologies</Label>
           <h2 className={h2}>What we build with</h2>
           <p className="mt-6 max-w-2xl text-lg text-[#94A3B8]">
             Every solution is reviewed and tested by an engineer, whatever model or tool is behind it.
@@ -145,7 +176,7 @@ export default function WhatWeDo() {
       <section className={band}>
         <div className={`${wrap} grid gap-12 lg:grid-cols-2`}>
           <div>
-            <Label>03 // Results</Label>
+            <Label>04 // Results</Label>
             <h2 className={h2}>What AI software delivers for your business</h2>
           </div>
           <ul className="space-y-6 text-lg text-[#94A3B8]">
@@ -159,7 +190,7 @@ export default function WhatWeDo() {
       {/* Approach */}
       <section className={band}>
         <div className={wrap}>
-          <Label>04 // Approach</Label>
+          <Label>05 // Approach</Label>
           <h2 className={h2}>How we build it</h2>
           <ol className={`mt-14 grid border-t ${rule} sm:grid-cols-2 lg:grid-cols-4`}>
             {steps.map(([title, text], i) => (
@@ -176,7 +207,7 @@ export default function WhatWeDo() {
       {/* FAQ */}
       <section className={band}>
         <div className={wrap}>
-          <Label>05 // FAQ</Label>
+          <Label>06 // FAQ</Label>
           <h2 className={h2}>Commonly asked questions</h2>
           <div className={`mt-14 border-t ${rule}`}>
             {faqs.map(([q, a]) => (
