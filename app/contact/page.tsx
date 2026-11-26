@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import { BOOKING_URL, EMAIL, MAILTO, MESSENGER_URL, display, mono, wrap } from "../site";
 import { ContactForm } from "./contact-form";
 
-export const metadata: Metadata = { title: "Contact" };
+export const metadata: Metadata = {
+  title: "Contact: Book a Free First Meeting",
+  description:
+    "Tell OliByte what you want to build or automate. Reply by email, or message us on Facebook Messenger. Free first meeting, no sales pressure.",
+};
 
 const link = "text-[#F8FAFC] underline hover:text-[#10B981]";
 

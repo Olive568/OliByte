@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BOOKING_URL, Label, btnPrimary, btnSecondary, display, mono, rule, wrap } from "../site";
 
-export const metadata: Metadata = { title: "About" };
+export const metadata: Metadata = {
+  title: "About: Software & AI Company in Las Piñas",
+  description:
+    "OliByte Software & AI Services is a software and IT company in Las Piñas, Metro Manila, building web apps, backends, and AI automations for SMEs and startups.",
+};
 
 const explore = [
   ["/projects", "Projects"],

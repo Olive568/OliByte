@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+// Change this one line when the custom domain is live.
+export const SITE_URL = "https://olibyte.vercel.app";
 export const TULAY_URL = "https://tulay-two.vercel.app/";
 // TODO: replace with the real Facebook Page handle and inbox before launch.
 export const MESSENGER_URL = "https://m.me/OliByteSoftwareAIServices";

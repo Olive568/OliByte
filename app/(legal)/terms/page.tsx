@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Terms & Conditions" };
+export const metadata: Metadata = {
+  title: "Terms & Conditions",
+  description: "Terms and conditions for using the OliByte website and services.",
+};
 
 export default function Terms() {
   return (
