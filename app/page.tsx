@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ContactForm } from "./contact/contact-form";
-import { BOOKING_URL, LogoMark, MESSENGER_URL, TULAY_URL, btnPrimary, btnSecondary, display, mono, rule, wrap } from "./site";
+import { BOOKING_URL, EMAIL, LogoMark, MESSENGER_URL, SITE_URL, TULAY_URL, btnPrimary, btnSecondary, display, mono, rule, wrap } from "./site";
 
 // TODO: confirm these engagement types and promises match how OliByte actually sells work.
 const offers = [
@@ -51,12 +51,41 @@ const journey = [
   ["Evolve", "New features and model updates as you grow."],
 ];
 
+// sameAs (Facebook, LinkedIn, Clutch) is left out until those profile URLs are confirmed.
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": `${SITE_URL}/#organization`,
+  name: "OliByte Software & AI Services",
+  alternateName: "OliByte",
+  url: SITE_URL,
+  logo: `${SITE_URL}/icon.png`,
+  image: `${SITE_URL}/opengraph-image.png`,
+  description:
+    "AI-native software and IT services. Web apps, backends, and AI automations for SMEs and startups in the Philippines and remotely worldwide.",
+  email: EMAIL,
+  address: { "@type": "PostalAddress", addressLocality: "Las Piñas", addressRegion: "Metro Manila", addressCountry: "PH" },
+  areaServed: { "@type": "Country", name: "Philippines" },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Services",
+    itemListElement: offers.map(({ title, text }) => ({
+      "@type": "Offer",
+      itemOffered: { "@type": "Service", name: title, description: text },
+    })),
+  },
+};
+
 const band = `border-t ${rule} py-16 sm:py-32`;
 const h2 = `${display} text-4xl sm:text-5xl`;
 
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
+      />
       {/* Hero: copy left, brand mark right. */}
       <section className={`${wrap} grid items-center gap-16 py-16 sm:py-36 lg:grid-cols-[3fr_2fr]`}>
         <div>

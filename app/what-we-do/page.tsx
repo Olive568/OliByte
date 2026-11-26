@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { BOOKING_URL, Label, btnPrimary, btnSecondary, display, mono, rule, wrap } from "../site";
 
-export const metadata: Metadata = { title: "What We Do" };
+export const metadata: Metadata = {
+  title: "Business Systems, Web Apps & AI Chatbots",
+  description:
+    "POS, CRM, inventory, booking systems, client portals, and AI chatbots for Philippine SMEs and startups. Scope, price, and timeline agreed in writing.",
+};
 
 // TODO: confirm timelines and engagement types match how OliByte actually sells work.
 const paths = [
